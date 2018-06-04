@@ -6,7 +6,7 @@ html {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 16px;
 }
-body { background-color: rgb(0, 255, 242);}
+body { background-color: rgb(245, 195, 194);}
 /* force browser to include padding and borders of elements in width calculations*/
 *{
     box-sizing: border-box;

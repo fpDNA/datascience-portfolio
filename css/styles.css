@@ -1,0 +1,117 @@
+html {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 16px;
+}
+
+/* force browser to include padding and borders of elements in width calculations*/
+*{
+    box-sizing: border-box;
+}
+
+/* Default Header style*/
+header{
+    background: linear-gradient( to right, #3E1305, #8A2811);
+    font-weight: 300;
+    font-size: 3.0rem;
+}
+header h1{
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+}
+header.tagline{
+    font-weight: 300;
+    margin: 0;
+    padding: 1rem 0;
+}
+ 
+/* on all screens elements should have left and right padding of 0.5em and horizontally centered*/
+    .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+/*Default settings*/
+
+ul{
+    /*remove all spacing and bullets from items*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.features li{
+    /*flexbox container*/
+    display:flex;
+}
+.features .feature-icon{
+    /*put some spacing around the icon*/
+    padding: 1rem;
+}
+.features svg{
+    /*change the size of icon*/
+   height: 64px;
+   width: 64px;
+   fill: #8A2811;
+}
+.features .feature-descr{
+    /*grow this element to fill available space*/
+    flex-grow: 1;
+}
+
+/* rules for screens 768px and wider*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    header{
+        background-image: url(../images/angelina-litvin-32188-unsplash.jpg);
+        /*background-size: cover;*/
+       /* background-repeat: no-repeat;*/
+        background-position: right; 
+        background-position: bottom;       
+        padding-top: 100px;
+       }
+    header h1{
+        font-size: 5.0rem;
+        width: 50%; 
+    }
+    header.tagline{
+        font-size: 1.5rem;
+        width: 50%;
+           }
+    .features{
+       display: flex;
+       flex-wrap: wrap;
+   }
+    .features li {
+        flex-basis: 50%
+    }
+ 
+}
+
+/* rules for screens 992px and wider*/
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+    .features{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .features li{
+       flex-basis: 33%
+    }
+    header{
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+}
+
+/*rules for screens 1200px and wider*/
+@media (min-width: 1200px) {
+    .container{
+        width: 1170 px;
+    }
+}
+
+

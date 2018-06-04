@@ -327,12 +327,8 @@ footer {
 		padding: 4%;
 		font-size: 14px;
 	}
-	.social {
-		float: left;
-	}
-	.social li a {
-		font-size: 1.3em;
-	}
+	
+	
 	.contact-content {
 		font-size: 12px;
 		line-height: 1.5;
